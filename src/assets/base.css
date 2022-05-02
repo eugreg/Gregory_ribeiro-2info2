@@ -8,18 +8,27 @@ body {
   display: grid;
   grid-template-columns: 15% 1fr;
   grid-template-rows: 10% auto 10%;
-  grid-template-areas: 
+  grid-template-areas:
     "header header"
     "sidenav content"
     "footer footer";
 }
 
-#header, #content, #sidenav, #footer {
+#header,
+#content,
+#sidenav,
+#footer {
   border: 1px solid green;
 }
 
 #header {
   grid-area: header;
+  background-color: #294973;
+  position: absolute;
+  width: 1950px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
 }
 #content {
   grid-area: content;
@@ -28,6 +37,13 @@ body {
 }
 #footer {
   grid-area: footer;
+  position: absolute;
+  width: 2500px;
+  height: 177px;
+  left: 0px;
+  top: 1716px;
+
+  background: #294973;
 }
 #sidenav {
   grid-area: sidenav;
@@ -40,4 +56,89 @@ body {
   border-radius: 15px;
   padding: 20px;
   margin: 10px;
+}
+.animais {
+  position: absolute;
+  width: 145px;
+  height: 42px;
+  left: 400px;
+  top: 60px;
+
+  font-family: "Alfa Slab One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+
+  color: #ffff;
+}
+.ajude {
+  position: absolute;
+  width: 145px;
+  height: 42px;
+  left: 600px;
+  top: 60px;
+
+  font-family: "Alfa Slab One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+
+  color: #ffffff;
+}
+.denuncie {
+  position: absolute;
+  width: 188px;
+  height: 96px;
+  left: 800px;
+  top: 60px;
+
+  font-family: "Alfa Slab One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+
+  color: #ffffff;
+}
+.pesquisar {
+  position: absolute;
+  width: 299px;
+  height: 40px;
+  left: 1200px;
+  top: 50px;
+}
+.login {
+  position: absolute;
+  width: 89px;
+  height: 68px;
+  left: 1676px;
+  top: 19px;
+}
+.logo {
+  position: absolute;
+  width: 189px;
+  height: 126px;
+  left: 36px;
+  top: 30px;
+  border-radius: 80%;
+}
+.ong {
+  position: absolute;
+  width: 107px;
+  height: 108px;
+  left: 700px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Alfa Slab One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 131px;
+
+  color: #ffffff;
 }
